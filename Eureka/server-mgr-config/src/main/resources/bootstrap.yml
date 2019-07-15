@@ -1,0 +1,14 @@
+server:
+  port: 51100
+
+spring:
+  application:
+    name: server-mgr-config
+  profiles:
+    active: git-test
+# rabbitmq 配置
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest

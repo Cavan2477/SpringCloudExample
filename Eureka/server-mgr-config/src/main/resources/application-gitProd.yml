@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://116.236.220.212:30071/CavanLiu/server-mgr-config.git
+          search-paths: /service-business-mall/,
+            /service-business-order/
+          username: yeying.liu@vonechain.com
+          password: lyy841103
+          default-label: master

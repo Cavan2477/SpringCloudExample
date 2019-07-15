@@ -1,0 +1,6 @@
+server:
+  port: 49200
+
+spring:
+  application:
+    name: service-mgr-zipkin

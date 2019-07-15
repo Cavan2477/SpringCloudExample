@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>server-mgr-eureka-slave-one</artifactId>
+    <packaging>jar</packaging>
+
+    <description>
+        This is eureka server slaveOne. It is discoveried all eureka client and manage them.
+        If you are not a system architect, do not modify the configuration at will.
+    </description>
+
+    <parent>
+        <groupId>com.eurekatest</groupId>
+        <artifactId>eurekatest-modules-mgr</artifactId>
+        <version>1.0</version>
+        <relativePath>../eurekatest-modules-mgr/pom.xml</relativePath>
+    </parent>
+
+    <dependencies>
+        <!-- 引入关于 eureka-server的依赖 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+
+        <!--服务健康检查依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

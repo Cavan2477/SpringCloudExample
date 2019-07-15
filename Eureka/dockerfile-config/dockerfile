@@ -1,0 +1,29 @@
+# This dockerfile uses the ubuntu image
+# VERSION 2 - EDITION 1
+# Author: Cavan Liu
+# Company: Shanghai Onechain Information Technology co. LTD.
+# Command format: Instruction [arguments / command] ..
+
+# Base image is openjdk
+FROM openjdk:8-jre
+
+# Maintainers
+MAINTAINER CavanLiu yeying.liu@vonechain.com
+
+# 环境变量
+#ENV WORK_PATH /opt
+ENV APP_NAME @project.build.finalName@
+ENV APP_VERSION @project.version@
+ENV APP_ALL_NAME APP_NAME-APP_VERSION.jar
+ENV APP_ALL_PATH $WORK_PATH/APP_ALL_NAME
+
+# Add JAR
+ADD $APP_ALL_NAME_TEMP APP_ALL_NAME
+ADD $APP_ALL_PATH_TEMP APP_ALL_PATH
+
+# Container listening port
+EXPOSE 10240
+
+# Instructions executed when the container starts.
+RUN bash -c 'touch $APP_ALL_PATH_TEMP.jar'
+ENTRYPOINT ["java", "-jar", "$APP_ALL_PATH_TEMP.jar"]

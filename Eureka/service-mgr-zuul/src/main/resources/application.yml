@@ -1,0 +1,21 @@
+server:
+  port: 49100
+
+spring:
+  application:
+    name: service-mgr-zuul
+
+zuul:
+  routes:
+    order:
+      path: /order/**
+      serviceId: order
+
+ribbon:
+  eureka:
+    enabled: false
+
+# order负载均衡
+order:
+  ribbon:
+    listOfServers: http://localhost:55100,http://localhost:55101

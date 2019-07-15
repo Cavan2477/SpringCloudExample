@@ -1,0 +1,12 @@
+server:
+  port: 39300
+
+spring:
+  application:
+    name: jar-model
+# rabbitmq 配置
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest

@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: server-mgr-config
+      #      profile: local
+      bus:
+        trace:
+          enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://ctp.server-mgr-eureka.master:52100/eureka/,http://ctp.server-mgr-eureka.slaveOne:52101/eureka/,http://ctp.server-mgr-eureka.slaveTwo:52102/eureka/
+  instance:
+    prefer-ip-address: true
+
+# 关闭安全验证
+management:
+  security:
+    enabled: false
