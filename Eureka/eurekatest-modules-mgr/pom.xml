@@ -128,7 +128,7 @@
         <spring-social.version>1.1.4.RELEASE</spring-social.version>
 
         <!--junit-->
-        <junit.version>4.12</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <!--build plugin-->
         <maven-shade-plugin.version>3.1.1</maven-shade-plugin.version>
