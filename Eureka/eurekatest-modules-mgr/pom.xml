@@ -75,7 +75,7 @@
         <spring-cloud-starter-hystrix.version>1.4.4.RELEASE</spring-cloud-starter-hystrix.version>
         <spring-cloud-starter-hystrix-dashboard.version>1.4.4.RELEASE</spring-cloud-starter-hystrix-dashboard.version>
         <spring-cloud-starter-feign.version>1.4.4.RELEASE</spring-cloud-starter-feign.version>
-        <httpclient.version>4.5.5</httpclient.version>
+        <httpclient.version>4.5.13</httpclient.version>
         <feign-httpclient.version>8.18.0</feign-httpclient.version>
         <spring-cloud-starter-ribbon.version>1.4.4.RELEASE</spring-cloud-starter-ribbon.version>
         <spring-cloud-starter-zuul.version>1.4.4.RELEASE</spring-cloud-starter-zuul.version>
